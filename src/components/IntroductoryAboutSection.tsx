@@ -4,39 +4,35 @@ import Image from "next/image";
 
 export default function IntroductoryAboutSection() {
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <div className="text-lg font-semibold mb-2">
-            0% Financing Available{" "}
-            <span className="text-blue-500 font-bold">affirm</span>
+    <section className="py-0 bg-white">
+      <div className="grid lg:grid-cols-2 min-h-[500px]">
+        {/* Left Content Compartment */}
+        <div className="flex items-center justify-center px-8 lg:px-16 py-12 bg-white">
+          <div className="max-w-md">
+            <div className="text-pink-500 text-sm font-semibold mb-4">
+              About Skin Vitality
+            </div>
+            <h1 className="text-4xl lg:text-5xl font-bold text-black leading-tight">
+              Skin Vitality Medical Clinic: Proudly Serving Canadians Since 1992
+            </h1>
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="text-pink-500 text-sm font-semibold mb-2">
-              About Skin Vitality
-            </div>
-            <h2 className="text-4xl font-bold text-black mb-6">
-              Skin Vitality Medical Clinic: Proudly Serving Canadians Since 1992
-            </h2>
-          </div>
-
-          <div className="relative">
+        {/* Right Video Compartment */}
+        <div className="relative bg-gray-100 min-h-[500px] flex items-center justify-center">
+          <div className="relative w-full h-full">
             <Image
-              src="https://images.unsplash.com/photo-1594824804732-ca8db7d1e4ca?w=600&q=80"
-              alt="Happy client"
-              width={600}
-              height={400}
-              className="w-full h-80 object-cover rounded-lg"
+              src="https://skinvitality.com/botox/wp-content/uploads/sites/7/2025/04/landing-page-images-8-673x505.png"
+              alt="Botox Wrinkle Relaxers Near Me"
+              fill
+              className="object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <Button
                 size="lg"
-                className="rounded-full w-16 h-16 bg-white/20 hover:bg-white/30"
+                className="rounded-full w-20 h-20 bg-white hover:bg-white/90 shadow-lg"
               >
-                <Play className="w-8 h-8 text-white" />
+                <Play className="w-8 h-8 text-black ml-1" fill="currentColor" />
               </Button>
             </div>
           </div>

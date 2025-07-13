@@ -1,5 +1,5 @@
-import { MapPin } from "lucide-react";
 import Image from "next/image";
+import { MapPin } from "lucide-react";
 
 export default function LocationsSection() {
   return (
@@ -16,155 +16,159 @@ export default function LocationsSection() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Oakville</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Oakville</div>
                     <div className="text-sm text-gray-600">481 Cornwall Rd</div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Mississauga</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Mississauga</div>
                     <div className="text-sm text-gray-600">
                       126 Lakeshore Rd. E.
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Toronto</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Toronto</div>
                     <div className="text-sm text-gray-600">
                       351 Eglinton Avenue West
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Ajax</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Ajax</div>
                     <div className="text-sm text-gray-600">
                       15 Westney Road North Unit 1C
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Burlington</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Burlington</div>
                     <div className="text-sm text-gray-600">5014 New St</div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Richmond Hill</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">
+                      Richmond Hill
+                    </div>
                     <div className="text-sm text-gray-600">
                       8865 Yonge Street
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Hamilton</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Hamilton</div>
                     <div className="text-sm text-gray-600">
                       #101-25 Main Street West Suite
                     </div>
-                  </div>
+                  </address>
                 </div>
               </div>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Stoney Creek</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Stoney Creek</div>
                     <div className="text-sm text-gray-600">
                       311 Fruitland Road Unit 3
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">London</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">London</div>
                     <div className="text-sm text-gray-600">
                       595 Fanshawe Park Rd. W., Unit F
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Milton</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Milton</div>
                     <div className="text-sm text-gray-600">
                       1250 Steeles Ave E
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Whitby</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Whitby</div>
                     <div className="text-sm text-gray-600">
                       1614 Dundas St. E Unit # 101
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">St. Catharines</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">
+                      St. Catharines
+                    </div>
                     <div className="text-sm text-gray-600">
                       436 Vansickle Rd, Unit #3
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Kitchener</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Kitchener</div>
                     <div className="text-sm text-gray-600">
                       4281 King St. E.
                     </div>
-                  </div>
+                  </address>
                 </div>
 
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-5 h-5 text-pink-500 mt-1" />
-                  <div>
-                    <div className="font-semibold">Barrie</div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
+                  <address className="not-italic">
+                    <div className="font-semibold text-black">Barrie</div>
                     <div className="text-sm text-gray-600">
                       555 Essa Rd Unit 28
                     </div>
-                  </div>
+                  </address>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="w-full h-96 bg-green-100 rounded-lg overflow-hidden">
+          <div className="flex justify-center lg:justify-end">
+            <div className="w-full max-w-md">
               <Image
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&q=80"
-                alt="Map of locations"
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
+                src="https://skinvitality.com/botox/wp-content/uploads/sites/7/2025/07/Map-of-locations.png"
+                alt="Medical clinic location map"
+                width={684}
+                height={503}
+                className="rounded-lg shadow-lg"
               />
             </div>
           </div>

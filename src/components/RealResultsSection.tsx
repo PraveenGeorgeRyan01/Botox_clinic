@@ -164,18 +164,20 @@ export default function RealResultsSection() {
             {/* Navigation Arrows */}
             <Button
               onClick={prevSlide}
-              size="lg"
-              className="absolute left-20 top-1/2 transform -translate-y-1/2 rounded-full w-12 h-12 bg-white hover:bg-gray-50 shadow-lg z-30 border border-gray-200"
+              variant="outline"
+              size="icon"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 rounded-full w-12 h-12 bg-white hover:bg-gray-50 shadow-xl z-40 border-2 border-gray-300 flex items-center justify-center"
             >
-              <ChevronLeft className="w-6 h-6 text-gray-600" />
+              <ChevronLeft className="w-6 h-6 text-gray-700" />
             </Button>
 
             <Button
               onClick={nextSlide}
-              size="lg"
-              className="absolute right-20 top-1/2 transform -translate-y-1/2 rounded-full w-12 h-12 bg-white hover:bg-gray-50 shadow-lg z-30 border border-gray-200"
+              variant="outline"
+              size="icon"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 rounded-full w-12 h-12 bg-white hover:bg-gray-50 shadow-xl z-40 border-2 border-gray-300 flex items-center justify-center"
             >
-              <ChevronRight className="w-6 h-6 text-gray-600" />
+              <ChevronRight className="w-6 h-6 text-gray-700" />
             </Button>
           </div>
 
@@ -197,16 +199,16 @@ export default function RealResultsSection() {
         </div>
 
         <footer className="text-center">
-          <h2 className="text-3xl font-bold text-black mb-6">
-            0% Financing Available
-          </h2>
-          <div className="flex justify-center">
+          <div className="flex items-center justify-center gap-4">
+            <h2 className="text-3xl font-bold text-black whitespace-nowrap">
+              0% Financing Available
+            </h2>
             <Image
               src="https://skinvitality.com/botox/wp-content/uploads/sites/7/2023/01/logo-affirm.png"
               alt="Affirm Logo"
               width={120}
               height={48}
-              className="cursor-pointer hover:opacity-80 transition-opacity"
+              className="cursor-pointer hover:opacity-80 transition-opacity pb-4"
             />
           </div>
         </footer>

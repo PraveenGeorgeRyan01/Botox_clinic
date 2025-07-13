@@ -23,7 +23,7 @@ export default function HeroSection() {
     <section className="bg-black text-white relative">
       {/* Top Bar */}
       <div className="bg-pink-500 text-center py-2 text-sm font-medium">
-        0% Financing Available
+        <span className="whitespace-nowrap">0% Financing Available</span>
       </div>
 
       {/* Header */}

@@ -18,8 +18,8 @@ export default function Page() {
       <AsSeenOnSection />
       <RealResultsSection />
       <IntroductoryAboutSection />
-      <MainAboutServicesSection />
       <HowItWorksSection />
+      <MainAboutServicesSection />
       <WhyChooseUsSection />
       <TestimonialsSection />
       <FAQSection />
