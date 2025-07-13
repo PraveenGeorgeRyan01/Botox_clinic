@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -6,8 +7,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Star } from "lucide-react";
+import { useState } from "react";
+import BookingModal from "@/components/BookingModal";
 
 export default function FAQSection() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
   return (
     <section className="py-16 bg-black text-white">
       <div className="container mx-auto px-4">
@@ -26,7 +31,10 @@ export default function FAQSection() {
             </p>
 
             <div className="space-y-3">
-              <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 text-base">
+              <Button
+                onClick={() => setIsBookingModalOpen(true)}
+                className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 text-base"
+              >
                 BOOK MY APPOINTMENT 👉
               </Button>
               <Button
@@ -196,6 +204,11 @@ export default function FAQSection() {
           </div>
         </div>
       </div>
+
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      />
     </section>
   );
 }

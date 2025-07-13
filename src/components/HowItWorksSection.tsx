@@ -1,8 +1,13 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
+import BookingModal from "@/components/BookingModal";
 
 export default function HowItWorksSection() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
   return (
     <section className="py-16 bg-black text-white">
       <div className="container mx-auto px-4">
@@ -91,7 +96,10 @@ export default function HowItWorksSection() {
             >
               Text Me
             </Button>
-            <Button className="bg-green-500 hover:bg-green-600 px-8 py-3">
+            <Button
+              onClick={() => setIsBookingModalOpen(true)}
+              className="bg-green-500 hover:bg-green-600 px-8 py-3"
+            >
               Book My Appointment
             </Button>
           </div>
@@ -110,6 +118,11 @@ export default function HowItWorksSection() {
           </div>
         </footer>
       </div>
+
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      />
     </section>
   );
 }

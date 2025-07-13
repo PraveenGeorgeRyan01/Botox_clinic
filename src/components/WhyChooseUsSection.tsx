@@ -1,7 +1,12 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
+import { useState } from "react";
+import BookingModal from "@/components/BookingModal";
 
 export default function WhyChooseUsSection() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
   return (
     <section className="py-16 bg-black text-white">
       <div className="container mx-auto px-4">
@@ -122,7 +127,10 @@ export default function WhyChooseUsSection() {
             >
               TEXT ME
             </Button>
-            <Button className="bg-green-500 hover:bg-green-600">
+            <Button
+              onClick={() => setIsBookingModalOpen(true)}
+              className="bg-green-500 hover:bg-green-600"
+            >
               BOOK MY APPOINTMENT 👉
             </Button>
           </div>
@@ -143,6 +151,11 @@ export default function WhyChooseUsSection() {
           </div>
         </div>
       </div>
+
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      />
     </section>
   );
 }

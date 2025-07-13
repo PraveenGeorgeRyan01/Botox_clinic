@@ -1,7 +1,12 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useState } from "react";
+import BookingModal from "@/components/BookingModal";
 
 export default function FinalCTASection() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
   return (
     <section className="bg-white">
       <div className="grid lg:grid-cols-2 items-center">
@@ -54,7 +59,10 @@ export default function FinalCTASection() {
             >
               Text Me
             </Button>
-            <Button className="bg-green-500 hover:bg-green-600 px-8 py-3 text-base font-semibold">
+            <Button
+              onClick={() => setIsBookingModalOpen(true)}
+              className="bg-green-500 hover:bg-green-600 px-8 py-3 text-base font-semibold"
+            >
               Book My Appointment
             </Button>
           </div>
@@ -93,6 +101,11 @@ export default function FinalCTASection() {
           </div>
         </div>
       </div>
+
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      />
     </section>
   );
 }
