@@ -60,7 +60,7 @@ export default function FAQSection() {
                 className="border-gray-700 border-b"
               >
                 <AccordionTrigger className="text-white hover:text-white text-left py-4 hover:no-underline">
-                  What is Botox<sup>®</sup>?
+                  What is Botox?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 pb-4">
                   Botox<sup>®</sup> is a purified protein authorized by Health
@@ -80,7 +80,7 @@ export default function FAQSection() {
                 className="border-gray-800 border-b"
               >
                 <AccordionTrigger className="text-white hover:text-white text-left py-4 hover:no-underline">
-                  How long does Botox<sup>®</sup> last?
+                  How long does Botox last?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 pb-4">
                   Typically, Botox<sup>®</sup> results last 3 to 4 months, with
@@ -98,7 +98,7 @@ export default function FAQSection() {
                 className="border-gray-800 border-b"
               >
                 <AccordionTrigger className="text-white hover:text-white text-left py-4 hover:no-underline">
-                  What is the difference between Botox<sup>®</sup> and dermal fillers?
+                  What is the difference between Botox and dermal fillers?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 pb-4">
                   While both are injectable treatments, Botox<sup>®</sup> and
@@ -116,7 +116,7 @@ export default function FAQSection() {
                 className="border-gray-800 border-b"
               >
                 <AccordionTrigger className="text-white hover:text-white text-left py-4 hover:no-underline">
-                  Are Botox<sup>®</sup> injections painful?
+                  Are Botox injections painful?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 pb-4">
                   Discomfort is minimal—most clients describe it as a brief
@@ -132,7 +132,7 @@ export default function FAQSection() {
                 className="border-gray-800 border-b"
               >
                 <AccordionTrigger className="text-white hover:text-white text-left py-4 hover:no-underline">
-                  How soon will I see results after my first Botox<sup>®</sup> treatment?
+                  How soon will I see results after my first Botox treatment?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 pb-4">
                   You may begin noticing results within 3 to 4 days, with full

@@ -5,7 +5,7 @@ export default function LocationsSection() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <div className="text-pink-500 text-sm font-semibold mb-2">
               Our Locations
@@ -161,16 +161,14 @@ export default function LocationsSection() {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md">
-              <Image
-                src="https://skinvitality.com/botox/wp-content/uploads/sites/7/2025/07/Map-of-locations.png"
-                alt="Medical clinic location map"
-                width={684}
-                height={503}
-                className="rounded-lg shadow-lg"
-              />
-            </div>
+          <div className="w-full">
+            <Image
+              src="https://skinvitality.com/botox/wp-content/uploads/sites/7/2025/07/Map-of-locations.png"
+              alt="Medical clinic location map"
+              width={684}
+              height={503}
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>

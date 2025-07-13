@@ -28,12 +28,12 @@ export default function IntroductoryAboutSection() {
               className="object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <Button
-                size="lg"
-                className="rounded-full w-20 h-20 bg-white hover:bg-white/90 shadow-lg"
-              >
-                <Play className="w-8 h-8 text-black ml-1" fill="currentColor" />
-              </Button>
+              <button className="bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-6 transition-all duration-300 hover:scale-110">
+                <Play
+                  className="w-12 h-12 text-black ml-1"
+                  fill="currentColor"
+                />
+              </button>
             </div>
           </div>
         </div>

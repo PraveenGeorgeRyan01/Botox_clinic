@@ -1,29 +1,34 @@
 import { Button } from "@/components/ui/button";
-import { Star } from "lucide-react";
 import Image from "next/image";
 
 export default function FinalCTASection() {
   return (
     <section className="bg-white">
-      <div className="grid lg:grid-cols-2">
+      <div className="grid lg:grid-cols-2 items-center">
         <div className="relative">
           <Image
-            src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80"
-            alt="Happy client"
-            width={600}
-            height={500}
-            className="w-full h-full object-cover"
+            src="https://skinvitality.com/botox/wp-content/uploads/sites/7/2025/04/Botox-Near-Me.png"
+            alt="Botox Near Me"
+            width={1000}
+            height={750}
+            className="w-full h-auto object-cover"
           />
         </div>
 
-        <div className="bg-black text-white p-12 flex flex-col justify-center">
+        <div className="bg-black text-white p-8 lg:p-12 flex flex-col justify-center">
           <div className="flex items-center gap-2 text-sm mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className="w-4 h-4 fill-yellow-400 text-yellow-400"
-              />
-            ))}
+            <div className="flex gap-1">
+              {[...Array(5)].map((_, i) => (
+                <img
+                  key={i}
+                  src="https://skinvitality.com/botox/wp-content/themes/botox-lp/resources/images/icon-star.svg"
+                  alt="star"
+                  width={15}
+                  height={15}
+                  className="w-4 h-4"
+                />
+              ))}
+            </div>
             <span>
               Rated <strong>4.9</strong> Stars By <strong>5000+</strong>{" "}
               Satisfied Clients
@@ -33,11 +38,11 @@ export default function FinalCTASection() {
           <div className="text-pink-500 text-sm font-semibold mb-2">
             So What Are You Waiting For?
           </div>
-          <h2 className="text-4xl font-bold mb-6">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
             Get Your Appointment For A FREE Consultation Today
-          </h2>
+          </h1>
 
-          <p className="text-gray-300 mb-8">
+          <p className="text-gray-300 mb-8 text-lg">
             Dedicated to providing dynamic & natural looking results that help
             you own your look with confidence, style & grace.
           </p>
@@ -45,41 +50,46 @@ export default function FinalCTASection() {
           <div className="flex gap-4 mb-8 flex-wrap">
             <Button
               variant="outline"
-              className="border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white"
+              className="border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white px-8 py-3 text-base font-semibold"
             >
-              TEXT ME
+              Text Me
             </Button>
-            <Button className="bg-green-500 hover:bg-green-600">
-              BOOK MY APPOINTMENT 👉
+            <Button className="bg-green-500 hover:bg-green-600 px-8 py-3 text-base font-semibold">
+              Book My Appointment
             </Button>
           </div>
 
           <div className="border-t border-gray-700 pt-6">
+            <blockquote className="text-gray-300 mb-4 italic text-base">
+              &quot;First time getting botox and they could not have been more
+              assuring. Going back in 3 weeks to get another treatment done!
+              Will be my new clinic for any work I need done.&quot;
+            </blockquote>
+
             <div className="flex items-center gap-3">
               <Image
-                src="https://api.dicebear.com/7.x/avataaars/svg?seed=nicolette"
+                src="https://skinvitality.com/botox/wp-content/uploads/sites/7/2023/02/download-50x50.jpg"
                 alt="Nicolette L."
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 className="rounded-full"
               />
               <div>
-                <div className="font-semibold">-Nicolette L.</div>
-                <div className="flex gap-1">
+                <div className="font-semibold text-white">-Nicolette L.</div>
+                <div className="flex gap-1 mt-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star
+                    <img
                       key={i}
-                      className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                      src="https://skinvitality.com/botox/wp-content/themes/botox-lp/resources/images/icon-star.svg"
+                      alt="star"
+                      width={15}
+                      height={15}
+                      className="w-4 h-4"
                     />
                   ))}
                 </div>
               </div>
             </div>
-            <p className="text-sm text-gray-300 mt-3 italic">
-              &quot;First time getting botox and they could not have been more
-              assuring. Going back in 3 weeks to get another treatment done!
-              Will be my new clinic for any work I need done.&quot;
-            </p>
           </div>
         </div>
       </div>
